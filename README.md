@@ -48,21 +48,23 @@ laya-test/
 ```
 
 ### Offline Model Extraction
-Both the **Laya English** (`~807 MB`) and **Laya Multilingual** (`~655 MB`, 100+ languages) model weights are included in this repository packaged as 95 MB split zip archives under [`models/laya_model_parts/`](models/laya_model_parts/) to comply with GitHub's 100 MB per-file limit without requiring Git LFS:
-* **English Model (9 parts):** `laya_model_english.zip.001` to `.009`
-* **Multilingual Model (7 parts):** `laya_model_multilingual.zip.001` to `.007`
+The complete suite of **all 3 Laya checkpoints** is included directly in this repository packaged as 95 MB split zip archives under [`models/laya_model_parts/`](models/laya_model_parts/) to comply with GitHub's 100 MB per-file limit without requiring Git LFS:
+* **English Model (9 parts):** `laya_model_english.zip.001` to `.009` (`~850 MB` uncompressed, ModernBERT-large)
+* **Multilingual Model (7 parts):** `laya_model_multilingual.zip.001` to `.007` (`~655 MB` uncompressed, mmBERT-base, 100+ languages)
+* **Typed-Decisions Model (8 parts):** `laya_model_typed_decisions.zip.001` to `.008` (`~842 MB` uncompressed, ModernBERT-large fine-tuned on enterprise workflows)
 
 To reconstitute and extract the model weights locally for full offline use:
 ```bash
-# Extract both English and Multilingual models
+# Extract all three models (English, Multilingual, Typed-Decisions)
 python extract_model.py
 
 # Or extract individually:
 python extract_model.py --model english
 python extract_model.py --model multilingual
+python extract_model.py --model typed-decisions
 ```
 
-This automatically joins the chunks and extracts the checkpoints into `models/laya_english/` and `models/laya_multilingual/`, which can then be loaded directly:
+This automatically joins the chunks and extracts the checkpoints into `models/laya_english/`, `models/laya_multilingual/`, and `models/laya_typed_decisions/`, which can then be loaded directly:
 ```python
 import laya
 from laya import Router
@@ -70,12 +72,14 @@ from laya import Router
 # Option A: Direct Agent Load
 agent_en = laya.load("models/laya_english")
 agent_ml = laya.load("models/laya_multilingual")
+agent_td = laya.load("models/laya_typed_decisions")
 
 # Option B: Router with local offline weights
 router = Router(
     models={
         "english": "models/laya_english",
-        "multilingual": "models/laya_multilingual"
+        "multilingual": "models/laya_multilingual",
+        "typed-decisions": "models/laya_typed_decisions"
     },
     preload=True
 )

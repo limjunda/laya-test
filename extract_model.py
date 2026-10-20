@@ -1,9 +1,10 @@
-"""Extract Laya English and Multilingual models from multi-part split zip archives in models/laya_model_parts/.
+"""Extract Laya English, Multilingual, and Typed-Decisions models from multi-part split zip archives in models/laya_model_parts/.
 
 Usage:
-    python extract_model.py                     # Extracts both English and Multilingual models
-    python extract_model.py --model english     # Extracts English model only
-    python extract_model.py --model multilingual# Extracts Multilingual model only
+    python extract_model.py                         # Extracts all three model checkpoints
+    python extract_model.py --model english         # Extracts English model only
+    python extract_model.py --model multilingual    # Extracts Multilingual model only
+    python extract_model.py --model typed-decisions # Extracts Typed-Decisions model only
 """
 import argparse
 import io
@@ -40,7 +41,7 @@ def main():
     parser = argparse.ArgumentParser(description="Extract Laya checkpoints from split zip parts")
     parser.add_argument(
         "--model",
-        choices=["all", "english", "multilingual"],
+        choices=["all", "english", "multilingual", "typed-decisions"],
         default="all",
         help="Which model checkpoint to extract (default: all)"
     )
@@ -57,14 +58,22 @@ def main():
     if args.model in ("all", "multilingual"):
         extract_split_parts("laya_model_multilingual.zip.*", parts_path, base_models_path / "laya_multilingual")
 
+    if args.model in ("all", "typed-decisions"):
+        extract_split_parts("laya_model_typed_decisions.zip.*", parts_path, base_models_path / "laya_typed_decisions")
+
     print("\nExtraction complete! You can load them locally with:")
     print("    import laya")
     print("    from laya import Router")
     print("    # Option A: Direct Agent load")
     print("    agent_en = laya.load('models/laya_english')")
     print("    agent_ml = laya.load('models/laya_multilingual')")
+    print("    agent_td = laya.load('models/laya_typed_decisions')")
     print("    # Option B: Router with local paths")
-    print("    router = Router(models={'english': 'models/laya_english', 'multilingual': 'models/laya_multilingual'}, preload=True)")
+    print("    router = Router(models={")
+    print("        'english': 'models/laya_english',")
+    print("        'multilingual': 'models/laya_multilingual',")
+    print("        'typed-decisions': 'models/laya_typed_decisions'")
+    print("    }, preload=True)")
 
 
 if __name__ == "__main__":
