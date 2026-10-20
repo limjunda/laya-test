@@ -64,6 +64,8 @@ python extract_model.py --model multilingual
 python extract_model.py --model typed-decisions
 ```
 
+> **Automatic Notebook Extraction:** Both Jupyter Notebooks (`laya_insurance_test.ipynb` and `laya_insurance_showcase.ipynb`) also include **Local-First auto-detection**: if the extracted directories are missing, the notebook automatically unpacks the archives from `models/laya_model_parts/` on startup and enables `HF_HUB_OFFLINE=1` for strictly offline execution without needing internet access.
+
 This automatically joins the chunks and extracts the checkpoints into `models/laya_english/`, `models/laya_multilingual/`, and `models/laya_typed_decisions/`, which can then be loaded directly:
 ```python
 import laya
