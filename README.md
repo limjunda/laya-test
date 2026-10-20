@@ -111,23 +111,23 @@ router = Router(
 | **Run #1** | Line-by-Line (`router.predict`) | `56.79 s` | `113.6 ms` | `107.2 ms` | `206.6 ms` | `8.81 cases/s` | `1.00x` |
 | **Run #2** | Batched (`router.predict_batch`) | **`29.68 s`** | **`59.4 ms`** | — | — | **`16.85 cases/s`** | **`1.91x`** |
 
-### Breakdown by Question Type & Language (500 Cases)
+### Breakdown by Question Type & Language: Single vs. Batch Accuracy (500 Cases)
 
-| Question Type | Cases | Accuracy / Recall | Line vs. Batch Parity | p50 Latency | p95 Latency | Mean Confidence |
-|---|---:|---:|---:|---:|---:|---:|
-| `intent` (8 options) | 100 | **83.0%** | **100.0%** | `165.3 ms` | `239.6 ms` | `0.878` |
-| `line_of_business` (6 options) | 100 | **83.0%** | **100.0%** | `135.3 ms` | `182.8 ms` | `0.852` |
-| `fraud_suspicion` (`noul`) | 100 | **79.0%** (`95.7%` Recall) | **100.0%** | `103.9 ms` | `145.2 ms` | `0.831` |
-| `needs_human` (`noul`) | 100 | **77.0%** | **100.0%** | `99.5 ms` | `125.4 ms` | `0.935` |
-| `urgency` (`score 0–3`) | 100 | **68.0%** | **100.0%** | `122.0 ms` | `170.3 ms` | `0.703` |
+| Question Type | Cases | Single Accuracy | Batch Accuracy | Accuracy Delta | Parity | p50 Latency | p95 Latency | Mean Confidence |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `intent` (8 options) | 100 | **83.0%** | **83.0%** | `+0.0%` | **100.0%** | `165.3 ms` | `239.6 ms` | `0.878` |
+| `line_of_business` (6 options) | 100 | **83.0%** | **83.0%** | `+0.0%` | **100.0%** | `135.3 ms` | `182.8 ms` | `0.852` |
+| `fraud_suspicion` (`noul`) | 100 | **79.0%** | **79.0%** | `+0.0%` | **100.0%** | `103.9 ms` | `145.2 ms` | `0.831` |
+| `needs_human` (`noul`) | 100 | **77.0%** | **77.0%** | `+0.0%` | **100.0%** | `99.5 ms` | `125.4 ms` | `0.935` |
+| `urgency` (`score 0–3`) | 100 | **68.0%** | **68.0%** | `+0.0%` | **100.0%** | `122.0 ms` | `170.3 ms` | `0.703` |
 
-| Language | Total Cases | Routed Checkpoint | Overall Accuracy | Parity | p50 Latency | p95 Latency |
-|---|---:|---|---:|---:|---:|---:|
-| **English (`en`)** | 150 | `english` (ModernBERT-large) | **94.0%** | **100.0%** | `151.8 ms` | `226.8 ms` |
-| **Singlish (`singlish`)** | 100 | `english` (ModernBERT-large) | **91.0%** | **100.0%** | `143.9 ms` | `217.0 ms` |
-| **Mixed (`zh-en`)** | 50 | `multilingual` (mmBERT-base) | **74.0%** | **100.0%** | `69.2 ms` | `112.5 ms` |
-| **Malay (`ms`)** | 100 | `multilingual` (mmBERT-base) | **63.0%** | **100.0%** | `67.2 ms` | `92.8 ms` |
-| **Chinese (`zh`)** | 100 | `multilingual` (mmBERT-base) | **58.0%** | **100.0%** | `69.8 ms` | `105.5 ms` |
+| Language | Total Cases | Routed Checkpoint | Single Accuracy | Batch Accuracy | Accuracy Delta | Parity | p50 Latency | p95 Latency |
+|---|---:|---|---:|---:|---:|---:|---:|---:|
+| **English (`en`)** | 150 | `english` (ModernBERT-large) | **94.0%** | **94.0%** | `+0.0%` | **100.0%** | `151.8 ms` | `226.8 ms` |
+| **Singlish (`singlish`)** | 100 | `english` (ModernBERT-large) | **91.0%** | **91.0%** | `+0.0%` | **100.0%** | `143.9 ms` | `217.0 ms` |
+| **Mixed (`zh-en`)** | 50 | `multilingual` (mmBERT-base) | **74.0%** | **74.0%** | `+0.0%` | **100.0%** | `69.2 ms` | `112.5 ms` |
+| **Malay (`ms`)** | 100 | `multilingual` (mmBERT-base) | **63.0%** | **63.0%** | `+0.0%` | **100.0%** | `67.2 ms` | `92.8 ms` |
+| **Chinese (`zh`)** | 100 | `multilingual` (mmBERT-base) | **58.0%** | **58.0%** | `+0.0%` | **100.0%** | `69.8 ms` | `105.5 ms` |
 
 ### Pass Criteria Gate Evaluation (500 Cases)
 
@@ -144,14 +144,14 @@ router = Router(
 
 ## 4. Benchmark Suite #2: AI Orchestrator Model Router (`24 Cases`)
 
-| Target Model Route | Downstream Pipeline | Cases | Routing Accuracy | Mean Confidence | Mean Predicted Complexity (`0–3`) |
-|---|---|---:|---:|---:|---:|
-| `fast_text_rewriter` | Small fast LLM (Flash-Lite / Haiku / Local 8B) | 5 | **100.0%** (`5/5`) | `0.700` | `0.20` (Expected `0`) |
-| `database_sql_api` | Deterministic SQL / REST API Tool Agent | 5 | **100.0%** (`5/5`) | `0.795` | `1.37` (Expected `1`) |
-| `vision_image_ocr` | Multimodal Vision / OCR Pipeline | 5 | **100.0%** (`5/5`) | `0.651` | `1.73` (Expected `2`) |
-| `deep_legal_reasoning` | Frontier Reasoning LLM (Gemini Pro / Opus / o3) | 5 | **100.0%** (`5/5`) | `0.872` | `2.65` (Expected `3`) |
-| `safety_human_guardrail` | Guardrail Block / Human Compliance Escalation | 4 | **100.0%** (`4/4`) | `0.415` | `1.74` (Expected `3`) |
-| **Total / Overall** | **5 Model Tiers (en, zh, ms, singlish)** | **24** | **100.0% (`24/24`)** | `0.700` | **100.0% Line vs. Batch Parity** |
+| Target Model Route | Downstream Pipeline | Cases | Single Accuracy | Batch Accuracy | Accuracy Delta | Parity | Mean Confidence | Mean Complexity (`0–3`) |
+|---|---|---:|---:|---:|---:|---:|---:|---:|
+| `fast_text_rewriter` | Small fast LLM (Flash-Lite / Haiku / Local 8B) | 5 | **100.0%** | **100.0%** | `+0.0%` | **100.0%** | `0.700` | `0.20` (Expected `0`) |
+| `database_sql_api` | Deterministic SQL / REST API Tool Agent | 5 | **100.0%** | **100.0%** | `+0.0%` | **100.0%** | `0.795` | `1.37` (Expected `1`) |
+| `vision_image_ocr` | Multimodal Vision / OCR Pipeline | 5 | **100.0%** | **100.0%** | `+0.0%` | **100.0%** | `0.651` | `1.73` (Expected `2`) |
+| `deep_legal_reasoning` | Frontier Reasoning LLM (Gemini Pro / Opus / o3) | 5 | **100.0%** | **100.0%** | `+0.0%` | **100.0%** | `0.872` | `2.65` (Expected `3`) |
+| `safety_human_guardrail` | Guardrail Block / Human Compliance Escalation | 4 | **100.0%** | **100.0%** | `+0.0%` | **100.0%** | `0.415` | `1.74` (Expected `3`) |
+| **Total / Overall** | **5 Model Tiers (en, zh, ms, singlish)** | **24** | **100.0%** | **100.0%** | **`+0.0%`** | **100.0%** | `0.700` | **100.0% Line vs. Batch Parity** |
 
 * **Orchestrator Timing (3 questions/case = 72 decisions):** `7.51 s` Line-by-Line vs. **`6.48 s` Batched** (`1.16x` speedup on CPU).
 
