@@ -48,16 +48,37 @@ laya-test/
 ```
 
 ### Offline Model Extraction
-The Laya English model weights (`~807 MB`) are included in this repository packaged as 95 MB split zip archives under [`models/laya_model_parts/`](models/laya_model_parts/) to comply with GitHub's 100 MB per-file limit without requiring Git LFS.
+Both the **Laya English** (`~807 MB`) and **Laya Multilingual** (`~655 MB`, 100+ languages) model weights are included in this repository packaged as 95 MB split zip archives under [`models/laya_model_parts/`](models/laya_model_parts/) to comply with GitHub's 100 MB per-file limit without requiring Git LFS:
+* **English Model (9 parts):** `laya_model_english.zip.001` to `.009`
+* **Multilingual Model (7 parts):** `laya_model_multilingual.zip.001` to `.007`
 
 To reconstitute and extract the model weights locally for full offline use:
 ```bash
+# Extract both English and Multilingual models
 python extract_model.py
+
+# Or extract individually:
+python extract_model.py --model english
+python extract_model.py --model multilingual
 ```
-This automatically joins the chunks and extracts the checkpoint into `models/laya_english/`, which can then be loaded directly:
+
+This automatically joins the chunks and extracts the checkpoints into `models/laya_english/` and `models/laya_multilingual/`, which can then be loaded directly:
 ```python
 import laya
-agent = laya.load("models/laya_english")
+from laya import Router
+
+# Option A: Direct Agent Load
+agent_en = laya.load("models/laya_english")
+agent_ml = laya.load("models/laya_multilingual")
+
+# Option B: Router with local offline weights
+router = Router(
+    models={
+        "english": "models/laya_english",
+        "multilingual": "models/laya_multilingual"
+    },
+    preload=True
+)
 ```
 
 ---
