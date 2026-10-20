@@ -11,8 +11,9 @@ env/
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints/
 
-# Hugging Face / Model weights cache (if stored locally)
-models/
+# Model weights cache & extracted directories
+models/*
+!models/laya_model_parts/
 .hf_cache/
 *.safetensors
 *.bin

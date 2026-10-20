@@ -33,6 +33,9 @@ jupyter notebook laya_insurance_test.ipynb
 laya-test/
 ├── laya_insurance_test.ipynb       # Primary self-contained Jupyter Notebook (98 Insurance Cases + 24 Orchestrator Cases)
 ├── laya_insurance_showcase.ipynb   # Additional 75-case multi-question FNOL triage showcase notebook
+├── extract_model.py                # Helper script to reconstitute and extract Laya weights from split zip parts
+├── models/
+│   └── laya_model_parts/           # Split multi-part zip archives (9x 95 MB chunks, GitHub-compliant)
 ├── data/
 │   ├── insurance_98_cases.json         # 98 multilingual insurance test cases (intent, LOB, urgency, fraud, escalation)
 │   ├── orchestrator_router_cases.json  # 24 multilingual AI orchestrator model-routing test cases
@@ -41,6 +44,19 @@ laya-test/
 ├── requirements.txt                # Python dependencies
 ├── .gitignore                      # Git ignore rules
 └── README.md                       # Project documentation & benchmark report
+```
+
+### Offline Model Extraction
+The Laya English model weights (`~807 MB`) are included in this repository packaged as 95 MB split zip archives under [`models/laya_model_parts/`](models/laya_model_parts/) to comply with GitHub's 100 MB per-file limit without requiring Git LFS.
+
+To reconstitute and extract the model weights locally for full offline use:
+```bash
+python extract_model.py
+```
+This automatically joins the chunks and extracts the checkpoint into `models/laya_english/`, which can then be loaded directly:
+```python
+import laya
+agent = laya.load("models/laya_english")
 ```
 
 ---
