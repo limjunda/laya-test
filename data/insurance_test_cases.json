@@ -1,0 +1,1053 @@
+[
+  {
+    "id": "INS-001",
+    "policy_type": "Auto",
+    "channel": "Mobile App FNOL",
+    "state": {
+      "claimant": "Marcus Vance",
+      "policy_id": "AUT-884920",
+      "subject": "Rear-ended at highway exit ramp",
+      "body": "I was stopped at the red light off Exit 14 on I-95 when a delivery van rear-ended my 2024 Honda CR-V. My bumper and trunk are crushed and the rear axle is bent so the car is not drivable. Police report #2026-9912 was filed. I need a tow truck immediately and a rental car authorization."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-002",
+    "policy_type": "Auto",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Elena Rostova",
+      "policy_id": "AUT-332194",
+      "subject": "Small rock chip on front windshield",
+      "body": "A pebble kicked up by a dump truck chipped the passenger side of my windshield yesterday afternoon. The chip is smaller than a quarter and not in my line of sight. Can I schedule a mobile glass repair sometime next week?"
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-003",
+    "policy_type": "Property",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "David & Sarah Jenkins",
+      "policy_id": "HOM-551029",
+      "subject": "Burst pipe flooding first floor right now",
+      "body": "Our upstairs main water supply pipe just burst and water is pouring through the living room ceiling! We shut off the main valve but there is two inches of standing water on our hardwood floors and soaked drywall. We need emergency water mitigation dispatched tonight!"
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-004",
+    "policy_type": "Billing",
+    "channel": "Email",
+    "state": {
+      "claimant": "Trevor McAllister",
+      "policy_id": "AUT-710293",
+      "subject": "Charged twice for October monthly premium!",
+      "body": "You drafted $245.50 from my checking account twice on October 15th! This caused an overdraft fee at my bank. Refund the duplicate charge and the $35 bank fee today or I am cancelling my policy and switching to Geico immediately."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-005",
+    "policy_type": "Health",
+    "channel": "Member Portal",
+    "state": {
+      "claimant": "Priya Nair",
+      "policy_id": "HLT-992011",
+      "subject": "Prior authorization request for lumbar MRI",
+      "body": "My orthopedic specialist Dr. Alan Grant submitted a prior authorization request (Ref #PA-44812) for a non-emergency lumbar spine MRI scheduled for next Thursday. Could you confirm if the imaging center is approved under my PPO plan?"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-006",
+    "policy_type": "SIU / Fraud",
+    "channel": "Adjuster Referral",
+    "state": {
+      "claimant": "Anonymous Body Shop Tip / Claim #CLM-88210",
+      "policy_id": "AUT-665432",
+      "subject": "Suspected staged collision and preexisting damage",
+      "body": "The policyholder bound comprehensive and collision coverage at 11:45 PM and reported a hit-and-run total loss less than 9 hours later. Metadata on the submitted photos shows the vehicle damage photos were taken three days BEFORE the policy inception date."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-007",
+    "policy_type": "Life",
+    "channel": "Email",
+    "state": {
+      "claimant": "Margaret Holloway",
+      "policy_id": "LIF-102948",
+      "subject": "Death benefit claim submission for Robert Holloway",
+      "body": "My husband Robert passed away peacefully last week. I am the primary beneficiary on his 20-year term life policy. I have attached the certified death certificate and completed claimant statement. Please let me know the timeline for benefit disbursement."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-008",
+    "policy_type": "Property",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Carlos Mendez",
+      "policy_id": "HOM-449182",
+      "subject": "Missing roof shingles after weekend hailstorm",
+      "body": "After Saturday's hailstorm, I noticed about a dozen asphalt shingles in my backyard and some dented aluminum gutters. There is no active leak inside the house yet, but I would like a field adjuster to inspect the roof before the next rain."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-009",
+    "policy_type": "Billing",
+    "channel": "Member Portal",
+    "state": {
+      "claimant": "Hannah Abbott",
+      "policy_id": "HOM-391827",
+      "subject": "Updating mortgagee clause after refinancing",
+      "body": "We recently refinanced our home mortgage with First National Bank. Please update the mortgagee billing clause on our homeowners policy before the annual escrow renewal in December. New loan number is #99401122."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-010",
+    "policy_type": "Health",
+    "channel": "Email",
+    "state": {
+      "claimant": "athaniel Brooks",
+      "policy_id": "HLT-441092",
+      "subject": "Surprise out-of-network anesthesia bill after emergency surgery",
+      "body": "I went to an in-network hospital for emergency appendectomy surgery, and now I received a $4,800 balance bill from the anesthesiologist claiming they are out-of-network! This violates the No Surprises Act. Reprocess this as in-network immediately or I am filing a formal complaint with the State Insurance Commissioner!"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-011",
+    "policy_type": "Auto",
+    "channel": "Mobile App FNOL",
+    "state": {
+      "claimant": "Chloe Takahashi",
+      "policy_id": "AUT-192837",
+      "subject": "Catalytic converter stolen from parked car",
+      "body": "When I started my Prius this morning in my apartment parking lot, it made a deafening roaring sound. A mechanic confirmed the catalytic converter was sawed off overnight. I filed an online police report and want to file a comprehensive theft claim."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-012",
+    "policy_type": "Life",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Gregory Houseman",
+      "policy_id": "DIS-778231",
+      "subject": "Short-term disability claim after knee reconstruction",
+      "body": "I underwent ACL and meniscus reconstruction surgery yesterday and my surgeon has placed me on total work restriction for 8 weeks. My job requires standing and lifting on a warehouse floor. Attached are the surgical notes and employer verification form."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-013",
+    "policy_type": "SIU / Fraud",
+    "channel": "Provider Audit",
+    "state": {
+      "claimant": "Apex Chiropractic & Wellness Billing Review",
+      "policy_id": "HLT-883920",
+      "subject": "Phantom billing for medical procedures never rendered",
+      "body": "Three members on family policy HLT-883920 called to report Explanation of Benefits statements showing 24 physical therapy sessions and nerve conduction studies billed by Apex Clinic in Miami while the entire family was living abroad in London."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-014",
+    "policy_type": "Billing",
+    "channel": "Email",
+    "state": {
+      "claimant": "Samantha Sterling",
+      "policy_id": "AUT-554321",
+      "subject": "Remove sold vehicle from auto policy",
+      "body": "I sold my 2016 Mazda3 yesterday and signed over the title. Please remove that vehicle from my multi-car policy effective today while keeping my 2023 Subaru Outback active, and send me the revised monthly premium schedule."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-015",
+    "policy_type": "Property",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Arthur Pendelton",
+      "policy_id": "HOM-229104",
+      "subject": "Kitchen grease fire — house uninhabitable",
+      "body": "A grease fire spread to our kitchen cabinets and smoke damaged the entire house. The fire department just left and red-tagged the electrical panel. My wife, two kids, and I have nowhere to sleep tonight and need immediate Loss of Use hotel placement!"
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-016",
+    "policy_type": "Auto",
+    "channel": "Email",
+    "state": {
+      "claimant": "Derek Zoolander",
+      "policy_id": "AUT-609182",
+      "subject": "Unacceptable delay on my collision claim payout!",
+      "body": "My car has been sitting at the body shop for three weeks waiting for your supplement adjuster to approve $1,200 in hidden frame parts! My rental coverage runs out tomorrow. If this isn't approved by 5 PM today I am hiring an attorney and dropping all three of my policies!"
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-017",
+    "policy_type": "Health",
+    "channel": "Mobile App",
+    "state": {
+      "claimant": "Linnea Lindqvist",
+      "policy_id": "HLT-309182",
+      "subject": "Reimbursement for annual vision exam and contact lenses",
+      "body": "I paid $210 out of pocket at my local optometrist for my routine annual eye exam and contact lens fitting. I uploaded the itemized receipt. Whenever convenient, please process the out-of-network vision allowance reimbursement."
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-018",
+    "policy_type": "Life",
+    "channel": "Member Portal",
+    "state": {
+      "claimant": "Victor Vance",
+      "policy_id": "LIF-882910",
+      "subject": "Accelerated terminal illness benefit inquiry",
+      "body": "My oncologist has diagnosed me with stage IV pancreatic cancer with a prognosis of less than 9 months. My whole life policy includes an Accelerated Death Benefit rider for terminal illness. We urgently need to access 50% of the face value to cover hospice and family expenses."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-019",
+    "policy_type": "SIU / Fraud",
+    "channel": "Claims System Alert",
+    "state": {
+      "claimant": "Claimant: R. Kowalski / Policy HOM-774123",
+      "policy_id": "HOM-774123",
+      "subject": "Identical luxury watch theft receipts across multiple carriers",
+      "body": "ISO ClaimSearch match triggered: Claimant submitted a $38,000 scheduled personal property claim for three stolen Rolex watches using a jeweler appraisal PDF that matches the exact serial numbers claimed as lost in two prior claims with competing insurers in 2024 and 2025."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-020",
+    "policy_type": "Billing",
+    "channel": "Email",
+    "state": {
+      "claimant": "Beatrice Miller",
+      "policy_id": "AUT-110293",
+      "subject": "35% renewal rate hike with zero accidents?!",
+      "body": "I just opened my renewal packet and my 6-month premium jumped from $680 to $920 despite having a clean driving record and zero claims for 10 years! Unless you can apply a loyalty discount or match Progressive's $640 quote, cancel my renewal effective next month."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-021",
+    "policy_type": "Property",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Nadia Al-Mansoor",
+      "policy_id": "REN-552019",
+      "subject": "Stolen laptop and camera from locked apartment",
+      "body": "Someone forced open our ground-floor balcony door while we were at work today and stole my MacBook Pro ($2,400) and Sony mirrorless camera ($1,800). Police dusted for prints and gave us incident #26-44109. Submitting under my renters insurance policy."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-022",
+    "policy_type": "Health",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Pharmacist & Patient: Liam O'Connor",
+      "policy_id": "HLT-661209",
+      "subject": "Urgent insulin refill rejected at pharmacy counter",
+      "body": "I am type 1 diabetic standing at the Walgreens pharmacy counter with less than 12 hours of insulin left in my pump, and your system is rejecting my Humalog refill saying 'step therapy required'! I need an emergency override code right now!"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-023",
+    "policy_type": "Auto",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "owen Wilson",
+      "policy_id": "AUT-994021",
+      "subject": "Parking lot door ding and scraped mirror",
+      "body": "Someone scraped my driver-side mirror and left a dent on my door while I was grocery shopping on Sunday. The car drives fine and the mirror glass isn't broken. I got a local body shop estimate for $850 and want to see how it compares to my $500 deductible."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-024",
+    "policy_type": "Life",
+    "channel": "Email",
+    "state": {
+      "claimant": "Grace Kim",
+      "policy_id": "LIF-330192",
+      "subject": "Requesting cash surrender value statement for whole life policy",
+      "body": "Could you please generate an updated illustration showing the current accumulated cash value and dividend balance on my whole life policy LIF-330192? No rush, I am just reviewing my retirement portfolio with my financial planner next month."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-025",
+    "policy_type": "SIU / Fraud",
+    "channel": "Email",
+    "state": {
+      "claimant": "Field Adjuster M. Davis",
+      "policy_id": "AUT-441827",
+      "subject": "Jump-in passengers claiming soft tissue injury",
+      "body": "Police bodycam footage from the minor 5 mph parking lot backing incident clearly shows only the driver was in the vehicle at the time of contact. However, an attorney letter of representation just arrived claiming four passengers were inside and all four are demanding $15,000 bodily injury settlements."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-026",
+    "policy_type": "Property",
+    "channel": "Email",
+    "state": {
+      "claimant": "Leonard Hofstadter",
+      "policy_id": "HOM-881234",
+      "subject": "Neighbor's oak tree fell onto our detached garage",
+      "body": "High winds knocked down a large limb from our neighbor's dead oak tree onto our detached garage roof. The garage roof rafters are cracked and rain is getting in on our lawn equipment, though our main house is untouched."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-027",
+    "policy_type": "Billing",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "fiona Gallagher",
+      "policy_id": "AUT-220193",
+      "subject": "Switch from monthly installment to annual pay-in-full",
+      "body": "I'd like to switch my billing plan from monthly EFT installments to paying the full 6-month premium upfront by credit card on my next renewal so I can get the paid-in-full discount."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-028",
+    "policy_type": "Health",
+    "channel": "Email",
+    "state": {
+      "claimant": "Dr. Rebecca Cho / Patient: S. Morales",
+      "policy_id": "HLT-772109",
+      "subject": "Expedited appeal for denied oncology immunotherapy",
+      "body": "Your utilization management team denied coverage for Pembrolizumab immunotherapy for our patient S. Morales citing 'experimental use', despite FDA approval and NCCN Category 1 guidelines for her exact biomarker profile. Treatment starts in 48 hours. Escalating for peer-to-peer review and external regulator appeal."
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-029",
+    "policy_type": "Auto",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Tyler Durden",
+      "policy_id": "AUT-773829",
+      "subject": "Stranded on dark rural highway — alternator died",
+      "body": "My car completely lost electrical power on Route 7 in freezing rain with my infant daughter in the back seat. My hazard lights are barely blinking. Please dispatch emergency roadside assistance towing right away!"
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-030",
+    "policy_type": "Life",
+    "channel": "Email",
+    "state": {
+      "claimant": "Raymond Holt",
+      "policy_id": "DIS-449012",
+      "subject": "Long-term disability benefit payment missing for October",
+      "body": "My approved monthly long-term disability benefit of $3,400 is always direct-deposited on the 1st of the month, but it is now the 5th and nothing has arrived. My mortgage payment is due tomorrow. If you breached our settlement agreement I will have my disability lawyer file suit immediately."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-031",
+    "policy_type": "Property",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Wendy Byrde",
+      "policy_id": "HOM-118293",
+      "subject": "Cracked patio tiles in backyard",
+      "body": "We noticed a few porcelain tiles on our back patio cracked over the winter, likely from frost heave. Whenever an adjuster is in the area over the next few weeks, could you let us know if this is covered under dwelling or excluded as earth movement?"
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-032",
+    "policy_type": "SIU / Fraud",
+    "channel": "Adjuster Referral",
+    "state": {
+      "claimant": "Claim #PRP-99201 / Warehouse Fire",
+      "policy_id": "COM-550192",
+      "subject": "Arson indicators and inventory removed prior to warehouse fire",
+      "body": "Fire marshal canine unit detected accelerants in three separate corners of the insured commercial warehouse. Security cameras were manually unplugged 2 hours before ignition, and neighboring tenants saw two unmarked box trucks emptying inventory the night before the fire."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-033",
+    "policy_type": "Billing",
+    "channel": "Email",
+    "state": {
+      "claimant": "Kevin Malone",
+      "policy_id": "AUT-339102",
+      "subject": "Need proof of insurance ID card sent to my email",
+      "body": "Hi there, I bought a new phone and lost my downloaded insurance ID cards. Could you email a PDF copy of my current auto insurance proof of coverage card at your convenience?"
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-034",
+    "policy_type": "Health",
+    "channel": "Member Portal",
+    "state": {
+      "claimant": "Zoe Washburne",
+      "policy_id": "HLT-112938",
+      "subject": "Adding newborn baby to family health plan",
+      "body": "Our daughter was born on October 12th! We want to add her to our family health insurance plan within the 30-day qualifying life event window so her upcoming 2-week pediatrician wellness visit is covered."
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-035",
+    "policy_type": "Auto",
+    "channel": "Mobile App FNOL",
+    "state": {
+      "claimant": "Hoban Washburne",
+      "policy_id": "AUT-883712",
+      "subject": "Hit a deer on country road — radiator leaking",
+      "body": "A deer jumped in front of my pickup truck on Highway 28. The front grille and headlights are smashed and green coolant is leaking from the radiator. I limped the truck into a gas station lot and need a tow to an approved repair shop."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-036",
+    "policy_type": "Property",
+    "channel": "Email",
+    "state": {
+      "claimant": "Miranda Priestly",
+      "policy_id": "HOM-990123",
+      "subject": "Bad faith denial of water damage claim — final notice",
+      "body": "Your adjuster absurdly claimed that sudden water discharge from our second-floor washing machine hose was 'long-term seepage' without even testing the moisture levels! Reverse this bad-faith denial within 24 hours or my legal counsel will file a bad-faith lawsuit and we will move our $4M umbrella portfolio elsewhere."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-037",
+    "policy_type": "Life",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Tobias Funke",
+      "policy_id": "LIF-661920",
+      "subject": "Update contingent beneficiary designation",
+      "body": "I would like to update the contingent beneficiary on my term life policy from my brother to my revocable living trust. My primary beneficiary remains my spouse. Please let me know which form I need to sign."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-038",
+    "policy_type": "SIU / Fraud",
+    "channel": "Data Analytics Flag",
+    "state": {
+      "claimant": "Auto Glass Network Audit — Vendor #VG-409",
+      "policy_id": "AUT-009182",
+      "subject": "Upcoding OEM heated windshields on base-trim fleet cars",
+      "body": "Automated invoice audit flagged 42 windshield replacement claims submitted by SpeedyClear Glass where they billed $1,650 for ADAS-calibrated rain-sensing OEM windshields on base-model fleet sedans that do not have ADAS cameras installed."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-039",
+    "policy_type": "Billing",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Walter White",
+      "policy_id": "AUT-515099",
+      "subject": "Wrongful non-payment cancellation notice!",
+      "body": "I just got a notice in the mail saying my auto policy cancels at midnight tonight for non-payment, even though I have the confirmation number (#PAY-88392) showing my payment cleared five days ago! Fix your broken accounting system right now or I'm taking my business to State Farm!"
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-040",
+    "policy_type": "Health",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Kim Wexler",
+      "policy_id": "HLT-440192",
+      "subject": "Physical therapy visit limit question",
+      "body": "Hi, I am recovering from a sprained ankle and have completed 8 physical therapy sessions so far. Could you tell me how many total outpatient physical therapy visits my plan covers per calendar year?"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-041",
+    "policy_type": "Auto",
+    "channel": "Mobile App FNOL",
+    "state": {
+      "claimant": "Saul Goodman",
+      "policy_id": "AUT-777111",
+      "subject": "Multi-car pileup with airbag deployment and ambulance transport",
+      "body": "I was involved in a 3-car collision at Main and 4th. All my side curtain airbags deployed, the front end of my Cadillac is demolished, and the other driver was taken by ambulance complaining of neck pain. Police are towing my car to the impound yard now."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-042",
+    "policy_type": "Property",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Claire Dunphy",
+      "policy_id": "HOM-662019",
+      "subject": "Power surge fried refrigerator and HVAC control board",
+      "body": "A lightning strike hit the utility transformer on our street yesterday afternoon and sent a surge through our house. Our refrigerator compressor and central AC control board are both dead, and food is spoiling. We have an electrician writing a surge diagnostic report today."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-043",
+    "policy_type": "Life",
+    "channel": "Email",
+    "state": {
+      "claimant": "Ron Swanson",
+      "policy_id": "DIS-220194",
+      "subject": "Return-to-work partial disability transition",
+      "body": "My physician has cleared me to return to work part-time (20 hours per week) starting next Monday following my back injury. How do I report my part-time wages so my residual disability benefit is calculated accurately?"
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-044",
+    "policy_type": "SIU / Fraud",
+    "channel": "SIU Tip Line",
+    "state": {
+      "claimant": "Employer HR Tip on Disability Claimant #DIS-90182",
+      "policy_id": "DIS-90182",
+      "subject": "Claimant collecting total disability while working cash construction job",
+      "body": "Employee J. Miller is currently collecting 100% total disability benefits claiming inability to lift more than 5 lbs due to a shoulder tear, but was photographed this weekend operating a jackhammer and roofing for his brother's contracting business."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-045",
+    "policy_type": "Billing",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Leslie Knope",
+      "policy_id": "HOM-773019",
+      "subject": "Applying smart home security system discount",
+      "body": "We just installed a centrally monitored fire and burglar alarm system with water leak sensors in our home. Attached is the monitoring certificate from ADT. Please apply the protective device discount to our homeowners policy."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-046",
+    "policy_type": "Health",
+    "channel": "Email",
+    "state": {
+      "claimant": "Ben Wyatt",
+      "policy_id": "HLT-559102",
+      "subject": "Pediatric ER visit claim wrongly denied for lack of pre-auth",
+      "body": "You denied the $3,200 ER claim from Children's Hospital when my son had a 104.5F fever and febrile seizure at 2 AM, claiming we needed prior authorization for an emergency room visit! Prudent layperson standards prohibit pre-auth for emergencies. Fix this immediately or we are switching our company group plan!"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-047",
+    "policy_type": "Auto",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "April Ludgate",
+      "policy_id": "AUT-441029",
+      "subject": "Reimbursement for $95 roadside tow receipt",
+      "body": "When my tire blew out last Tuesday, the app wasn't loading so I paid $95 out of pocket for a local tow truck to take my car to Discount Tire. Attached is the paid receipt for reimbursement under my roadside coverage."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-048",
+    "policy_type": "Property",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Eleanor Shellstrop",
+      "policy_id": "HOM-339104",
+      "subject": "Sewer backup flooding finished basement",
+      "body": "Raw sewage is backing up through our basement floor drain after the municipal storm main overflowed! We have the $25,000 Water Backup endorsement on our policy. It smells terrible and is ruining the carpet—please send a biohazard cleanup crew today!"
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-049",
+    "policy_type": "Life",
+    "channel": "Email",
+    "state": {
+      "claimant": "Chidi Anagonye",
+      "policy_id": "LIF-991023",
+      "subject": "Accidental Death & Dismemberment claim — loss of sight in left eye",
+      "body": "Following a laboratory chemical accident last month, ophthalmologists have certified permanent, irreversible loss of sight in my left eye. I am filing a dismemberment benefit claim under my group AD&D policy. Medical records are attached."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-050",
+    "policy_type": "Billing",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Tahani Al-Jamil",
+      "policy_id": "AUT-660192",
+      "subject": "Update credit card expiration date for autopay",
+      "body": "My Visa card on file for automatic monthly premium payments expires at the end of this month. I updated the new expiration date and CVV in my profile—just confirming next month's draft will go through smoothly."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-051",
+    "policy_type": "SIU / Fraud",
+    "channel": "Adjuster Referral",
+    "state": {
+      "claimant": "Claim #AUT-99102 / Altered Towing & Storage Invoice",
+      "policy_id": "AUT-99102",
+      "subject": "Doctored PDF invoice inflating $300 tow to $3,800",
+      "body": "The claimant submitted a PDF receipt from Metro Towing for $3,800. Font forensics show the '3,' was digitally pasted in front of '800', and when we called Metro Towing directly, their dispatcher confirmed the actual invoice #4412 was only $380."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-052",
+    "policy_type": "Auto",
+    "channel": "Email",
+    "state": {
+      "claimant": "Jason Mendoza",
+      "policy_id": "AUT-119283",
+      "subject": "Other driver's insurer accepted liability — subrogation deductible return?",
+      "body": "Since the driver who ran the stop sign was cited 100% at fault and their insurance company accepted liability, when will your subrogation team recover and refund my $1,000 collision deductible?"
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-053",
+    "policy_type": "Health",
+    "channel": "Member Portal",
+    "state": {
+      "claimant": "Mindy St. Claire",
+      "policy_id": "HLT-882019",
+      "subject": "Dental crown pre-determination estimate",
+      "body": "My dentist submitted X-rays for a porcelain crown on tooth #14 (pre-determination #DN-3319). Could you let me know what percentage the dental plan covers and what my estimated copay will be before I schedule the appointment next month?"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-054",
+    "policy_type": "Property",
+    "channel": "Mobile App FNOL",
+    "state": {
+      "claimant": "Michael Realman",
+      "policy_id": "HOM-440192",
+      "subject": "Vandalism to fence and garage door overnight",
+      "body": "Teenagers spray-painted graffiti across our vinyl privacy fence and dented two panels of our aluminum garage door last night. We filed a police report and got a contractor quote for $1,900 to pressure-wash and replace the dented panels."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-055",
+    "policy_type": "Billing",
+    "channel": "Email",
+    "state": {
+      "claimant": "Janet Dell",
+      "policy_id": "AUT-772019",
+      "subject": "Good student discount documentation for teen driver",
+      "body": "Attached is my son's fall semester high school transcript showing a 3.85 GPA (Honor Roll). Please apply the Good Student Discount to our auto policy for the upcoming billing cycle."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-056",
+    "policy_type": "Life",
+    "channel": "Email",
+    "state": {
+      "claimant": "Estate Attorney for Policy LIF-550192",
+      "policy_id": "LIF-550192",
+      "subject": "Unlawful delay on undisputed life insurance payout — statutory interest demand",
+      "body": "It has been 62 days since we submitted all required proof of death documents for policy LIF-550192, violating the state 30-day prompt payment statute! Wire the $500,000 benefit plus 10% statutory penalty interest by Friday or we are filing a Department of Insurance enforcement action and civil suit."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-057",
+    "policy_type": "Auto",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Carmine Berzatto",
+      "policy_id": "AUT-330194",
+      "subject": "Commercial delivery van sideswiped in downtown traffic",
+      "body": "One of our restaurant catering vans was sideswiped by a city bus on Michigan Ave. The sliding side door is jammed shut and the fender is scraping the tire. We need an adjuster inspection this week so we can get the van back on our delivery route."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-058",
+    "policy_type": "SIU / Fraud",
+    "channel": "Claims System Alert",
+    "state": {
+      "claimant": "Medical Provider Ring Alert — Clinic Tax ID 99-4018221",
+      "policy_id": "AUT-881029",
+      "subject": "Identical boilerplate narrative notes across 18 unrelated PIP claimants",
+      "body": "Text similarity scan across 18 Personal Injury Protection (PIP) claims from different accidents shows word-for-word identical physician exam notes, identical typos, and identical $9,950 billing just below the $10,000 PIP statutory limit."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-059",
+    "policy_type": "Property",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Sydney Adamu",
+      "policy_id": "HOM-209183",
+      "subject": "Tornado tore off porch roof and shattered living room windows",
+      "body": "A tornado just touched down in our neighborhood! Our front porch roof is completely gone, three front windows are shattered with glass everywhere, and rain is blowing straight into the house. We need emergency board-up and tarping services immediately!"
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-060",
+    "policy_type": "Health",
+    "channel": "Email",
+    "state": {
+      "claimant": "Richard Jerimovich",
+      "policy_id": "HLT-991827",
+      "subject": "In-network dermatologist directory is completely inaccurate!",
+      "body": "Every single dermatologist listed as 'accepting new patients' in your online provider directory either retired two years ago or stopped taking your insurance! If you cannot find me an in-network appointment or grant a network adequacy gap exception this week, I am dropping this plan during open enrollment!"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-061",
+    "policy_type": "Auto",
+    "channel": "Mobile App FNOL",
+    "state": {
+      "claimant": "Marcus Fenix",
+      "policy_id": "AUT-501928",
+      "subject": "Hail damage across hood and roof of parked SUV",
+      "body": "Golf-ball-sized hail pelted my 2025 Ford Explorer while it was parked at the airport long-term lot. There are at least 30 small dents on the hood and roof, though none of the glass broke and the vehicle drives normally. Requesting a paintless dent repair estimate."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-062",
+    "policy_type": "Property",
+    "channel": "Email",
+    "state": {
+      "claimant": "lara Croft",
+      "policy_id": "HOM-701928",
+      "subject": "Chimney collapse after minor earthquake tremor",
+      "body": "Yesterday's 4.8 magnitude tremor caused our brick chimney to crack and collapse onto the side yard, tearing away part of the roof flashing. We have the Earthquake Endorsement on our homeowners policy and need a structural engineer inspection before rain enters the attic."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-063",
+    "policy_type": "Health",
+    "channel": "Phone Transcript",
+    "state": {
+      "claimant": "Joel Miller",
+      "policy_id": "HLT-601923",
+      "subject": "Inpatient psychiatric hospital admission authorization",
+      "body": "Our teenage daughter was admitted through the ER to St. Jude Behavioral Health unit 2 hours ago for acute crisis stabilization. The hospital utilization review nurse needs immediate inpatient authorization for a 72-hour hold."
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-064",
+    "policy_type": "Billing",
+    "channel": "Email",
+    "state": {
+      "claimant": "Arthur Morgan",
+      "policy_id": "HOM-884012",
+      "subject": "Escrow paid homeowners premium AND you drafted my bank account!",
+      "body": "My mortgage company paid my $2,100 annual homeowners premium out of escrow on October 1st, and then your billing system STILL auto-drafted $2,100 from my personal checking account today! Wire my $2,100 back within 48 hours or I am cancelling both my home and auto policies!"
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-065",
+    "policy_type": "SIU / Fraud",
+    "channel": "Adjuster Referral",
+    "state": {
+      "claimant": "Claim #AUT-77319 / Tow Yard Collusion",
+      "policy_id": "AUT-77319",
+      "subject": "Unlicensed chasers steering minor fender-bender to shell clinic",
+      "body": "Both drivers in a low-speed bumper tap reported that a 'runner' arrived at the scene within 3 minutes claiming to represent the insurance company, towed drivable vehicles to an unlisted warehouse, and had them sign blank assignment-of-benefits forms for a pain clinic currently under FBI investigation."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-066",
+    "policy_type": "Life",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Commander Shepard",
+      "policy_id": "LIF-449018",
+      "subject": "Term-to-permanent life insurance conversion request",
+      "body": "My 10-year convertible term life policy reaches its conversion deadline at the end of next quarter. I would like to convert $250,000 of the coverage to a permanent universal life policy without a medical exam, as guaranteed by my conversion rider."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-067",
+    "policy_type": "Auto",
+    "channel": "Email",
+    "state": {
+      "claimant": "Max Payne",
+      "policy_id": "AUT-339011",
+      "subject": "Lowball total loss valuation on my 2022 Tacoma!",
+      "body": "Your total loss settlement offer of $26,500 for my 2022 Toyota Tacoma TRD Pro is $7,000 below every comparable listing within 100 miles! You used base-trim 2WD comparables by mistake. Revise this valuation immediately or I am invoking the formal appraisal clause and hiring an attorney!"
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-068",
+    "policy_type": "Property",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Alan Wake",
+      "policy_id": "HOM-110294",
+      "subject": "Ice dam water staining in upstairs guest bedroom",
+      "body": "Melting snow backed up behind an ice dam on our north eaves and left a 2-foot yellowish water stain on the guest bedroom ceiling. We had the roof cleared of snow today; please schedule an adjuster to inspect the attic insulation and drywall next week."
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-069",
+    "policy_type": "Health",
+    "channel": "Member Portal",
+    "state": {
+      "claimant": "Jill Valentine",
+      "policy_id": "HLT-220198",
+      "subject": "Requesting itemized Explanation of Benefits for lab bloodwork",
+      "body": "I see a $42.15 patient responsibility balance on my portal for routine annual lipid and metabolic blood panels at Quest Diagnostics. Could you clarify whether this was applied to my annual deductible or coinsurance?"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-070",
+    "policy_type": "Life",
+    "channel": "Email",
+    "state": {
+      "claimant": "Claire Redfield",
+      "policy_id": "DIS-883012",
+      "subject": "Maternity short-term disability claim filing",
+      "body": "I delivered twins via cesarean section yesterday morning and am submitting my short-term disability maternity benefit claim for the standard 8-week postpartum recovery period. My OB-GYN attending physician statement is attached."
+    },
+    "expected_department": "life_disability",
+    "expected_urgency": 1,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-071",
+    "policy_type": "Billing",
+    "channel": "Web Portal",
+    "state": {
+      "claimant": "Leon Kennedy",
+      "policy_id": "AUT-991024",
+      "subject": "Defensive driving course certificate for premium discount",
+      "body": "I completed the state-approved 6-hour online defensive driving course over the weekend. I have uploaded the completion certificate PDF. Please apply the 3-year defensive driver discount to my policy at your earliest convenience."
+    },
+    "expected_department": "billing_policy",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-072",
+    "policy_type": "SIU / Fraud",
+    "channel": "Underwriting Audit",
+    "state": {
+      "claimant": "Commercial Trucking Application #COM-33019",
+      "policy_id": "COM-33019",
+      "subject": "Chameleon carrier evading DOT out-of-service order via straw owner",
+      "body": "Applicant registered 'BlueSky Freight LLC' listing a residential address and clean safety record, but VIN cross-checks reveal all 14 semi-trucks were transferred yesterday from 'RedLine Logistics', which was shut down by FMCSA last week for fatal brake violations and unpaid claims."
+    },
+    "expected_department": "fraud_siu",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-073",
+    "policy_type": "Auto",
+    "channel": "Mobile App FNOL",
+    "state": {
+      "claimant": "Gordon Freeman",
+      "policy_id": "AUT-449102",
+      "subject": "Backed into concrete pillar in parking garage",
+      "body": "I misjudged a tight turn in an underground parking garage and scraped my rear passenger quarter panel against a concrete pillar. Nobody else was involved and the taillights still work. Uploading photos for an photo-estimate."
+    },
+    "expected_department": "auto_claims",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  },
+  {
+    "id": "INS-074",
+    "policy_type": "Property",
+    "channel": "Email",
+    "state": {
+      "claimant": "Alyx Vance",
+      "policy_id": "HOM-559102",
+      "subject": "Contractor supplement delayed 45 days — mold now growing!",
+      "body": "Because your desk adjuster ignored our restoration contractor's supplement emails for 45 days, black mold is now growing behind the damp baseboards! If a supervisor does not approve the remediation today, we are reporting this to the Department of Insurance and suing for consequential damages!"
+    },
+    "expected_department": "property_claims",
+    "expected_urgency": 2,
+    "expected_churn_or_legal": true
+  },
+  {
+    "id": "INS-075",
+    "policy_type": "Health",
+    "channel": "Email",
+    "state": {
+      "claimant": "Isaac Clarke",
+      "policy_id": "HLT-774019",
+      "subject": "Durable medical equipment (CPAP machine) replacement supplies",
+      "body": "Hi, it has been 6 months since my last CPAP mask and tubing order. Could you confirm if I am eligible for my routine semi-annual replacement supplies under my durable medical equipment benefit?"
+    },
+    "expected_department": "health_medical",
+    "expected_urgency": 0,
+    "expected_churn_or_legal": false
+  }
+]
+

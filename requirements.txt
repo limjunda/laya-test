@@ -1,0 +1,11 @@
+laya>=0.3.20
+torch>=2.4.0
+transformers>=4.57.0
+safetensors>=0.4.0
+huggingface_hub>=0.25.0
+pandas>=2.0.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+jupyter>=1.0.0
+ipykernel>=6.29.0
+tqdm>=4.66.0
